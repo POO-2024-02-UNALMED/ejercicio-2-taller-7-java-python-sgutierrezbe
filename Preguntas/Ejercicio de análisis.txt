@@ -1,0 +1,47 @@
+1. Ejercicio de análisis
+a) Explique por qué la clase Instrumento debe definirse como abstracta y qué la
+
+la clase insrumento se usa como una base para crear clases con caracteristicas comunes, pero como clase por si misma no tiene sentido, asi que las clases hijas que heredan a partir de la clase instrumento, son quienes redefinen los metodos abstractos de tocar y afinar, manteniendo la clase no abstracta get tipo, y la diferencia de una clase normal es que no se pueden crear instancias de instrumento unicamente, sino que de sus clase hijas.
+
+b) Elabore una clase denominada Piano heredada de Instrumento, añada un
+constructor y redefina para ella los métodos Tocar y Afinar.
+
+public class Piano extends Instrumento {
+    public Piano(String tipo) {
+        super(tipo);
+    }
+
+    public void Tocar() {
+        System.out.println("Tocando Piano");
+    }
+
+    public void Afinar() {
+        System.out.println("Afinando Piano");
+    }
+}
+
+c) ¿Señale cuál de las siguientes líneas no se pueden ejecutar y por qué?
+
+la 3, ya que se intenta crear una inteancia de instrumento, la cual es una clase abstracta
+
+d) ¿Qué imprime el siguiente programa?
+error, ya que no compila la linea 3
+
+2. Ejercicio de código en el repositorio
+a. ¿Qué sucede si se define el método explotar() de la clase Estrella como se indica a
+continuación? Explique su respuesta.
+
+esta mal implementada ya que es un metodo abstracto, el cual no deberia tener una implementacion dentro de el programa, 
+pero como se muestra en la imagen, se usa un print, asi que no podria ser un metodo abstracto.
+
+¿Qué significa que los métodos tipoCuerpo2() y getID() de la clase
+ObjetoAstronomicoExtraSolar, no se definan como abstract? ¿Podría considerarse
+esta situación un error? Explique.
+
+no, estan bien implementados, ya que aunque sea una clase abstracta, sus metodos no tienen porque ser abstractos,
+en este caso esos 2 metodos se les da una implementacion en la defiinicion de la clase, y si fueran abstractos,
+no se les podria dar.
+
+Si se define como abstracta la clase ObjetoAstronomicoExtraSolar, como se indica a
+continuación, ¿puede considerarse un error definir una clase abstracta sin métodos
+abstractos? Explique.
