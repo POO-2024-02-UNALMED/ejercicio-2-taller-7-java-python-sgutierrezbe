@@ -1,6 +1,6 @@
 public class ObjTaller7 {
     public static void main (String[] args) {
-        Galaxia g = new Galaxia();
+        Galaxia g = new Galaxia(); 
         Nova nova = new Nova();
         nova.tipoCuerpo1();
         nova.explotar();
@@ -16,7 +16,7 @@ public class ObjTaller7 {
         System.out.println(obN instanceof SuperNova);
         System.out.println(obN instanceof Galaxia);
         
-        ObjetoAstronomicoExtraSolar[] oa = new ObjetoAstronomicoExtraSolar[3];
+        ObjetoAstronomicoExtraSolar[] oa = new ObjetoAstronomicoExtraSolar[3]; 
         oa[0] = new Galaxia();
         oa[1] = new Nova();
         oa[2] = new SuperNova();
